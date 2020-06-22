@@ -10,7 +10,7 @@ class Ball{
     push();
     translate(pos.x, pos.y);
     rotate(angle);
-    fill("green");
+    fill("red");
     ellipseMode(RADIUS);
     circle(0, 0, this.radius); 
     pop();

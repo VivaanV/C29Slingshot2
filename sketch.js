@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 
-var box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box14, box15;
+var box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box14, box15, box16,box17;
 var sling;
 var ball;
 var block1,block2,block3,block4,block5
@@ -40,13 +40,16 @@ function setup() {
    box13 = new Box(620,350,50,50);
    box14= new Box(670,350,50,50);
    box15 = new Box(645,100,50,50);
+   box16 = new Box(645,100,50,50);
+   box17 = new Box(785,250,50,50);
+
 
    sling = new SlingShot(ball.body, {x:320, y:480});
   
 }
 
 function draw() {
-  background(233,56,63);
+  background(0,0,255);
   Engine.update(engine);
 
   block1.display();
@@ -73,6 +76,8 @@ function draw() {
   box13.display();
   box14.display();
   box15.display();
+  box16.display();
+  box17.display();
 
   sling.display();
 }
